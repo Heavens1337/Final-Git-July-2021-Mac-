@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a81e9c1b-96a7-4cb5-9eb2-451ed7cd4de2" name="Default Changelist" comment="Added marker_check_func(), minor improvements">
+    <list default="true" id="a81e9c1b-96a7-4cb5-9eb2-451ed7cd4de2" name="Default Changelist" comment="Reverted to a previous version and built upon that, program works much better now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -90,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626875086767</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Reverted to a previous version and built upon that, program works much better now">
+      <created>1626875382546</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1626875382546</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +117,7 @@
     <MESSAGE value="imported robot to main, started on movement" />
     <MESSAGE value="Movement through 1st room working" />
     <MESSAGE value="Added marker_check_func(), minor improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added marker_check_func(), minor improvements" />
+    <MESSAGE value="Reverted to a previous version and built upon that, program works much better now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reverted to a previous version and built upon that, program works much better now" />
   </component>
 </project>
