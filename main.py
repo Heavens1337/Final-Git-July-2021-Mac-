@@ -14,7 +14,8 @@ if marker_check == 1:
     r.backward(50)
     r.left(650)
     r.forward(100)
-    #do scans and stuff here
+    # person scan here, then if person: rescue
+    # temp scan here
     r.backward(100)
     r.right(650)
     r.forward(50)
@@ -33,7 +34,8 @@ if marker_check == 1:
     r.backward(50)
     r.left(600)
     r.forward(200)
-    # do scans and stuff here
+    # fire scan here, then if fire: extinguish
+    # temp scan here
     r.backward(200)
     r.right(600)
     r.forward(50)
@@ -53,7 +55,7 @@ print(marker_check)
 
 if marker_check == 1:
     r.left(200)
-    #temp scan here
+    # temp scan here
     r.right(200)
 
 r.right(50)
@@ -73,7 +75,8 @@ if marker_check == 1:
     r.right(10)
     r.forward(350)
     r.left(550)
-    #temp scan here
+    # fire scan here, then if fire: extinguish
+    # temp scan here
     r.right(550)
     r.backward(350)
 
@@ -91,6 +94,7 @@ if marker_check == 1:
     r.right(100)
     r.forward(350)
     r.left(450)
-    #scan here
+    # person scan here, then if person: rescue
+    # temp scan here
     r.right(450)
     r.backward(350)
