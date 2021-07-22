@@ -1,6 +1,9 @@
 import robot
 r = robot.RobotController()
 r.connect()
+import matplotlib.pyplot as plt
+temperature_list = []
+temperature_list.append(r.take_temperature())
 
 r.forward(350)
 r.left(130)
@@ -15,7 +18,7 @@ if marker_check == 1:
     r.left(650)
     r.forward(100)
     # person scan here, then if person: rescue
-    # temp scan here
+    temperature_list.append(r.take_temperature())
     r.backward(100)
     r.right(650)
     r.forward(50)
@@ -35,7 +38,7 @@ if marker_check == 1:
     r.left(600)
     r.forward(200)
     # fire scan here, then if fire: extinguish
-    # temp scan here
+    temperature_list.append(r.take_temperature())
     r.backward(200)
     r.right(600)
     r.forward(50)
@@ -55,7 +58,7 @@ print(marker_check)
 
 if marker_check == 1:
     r.left(200)
-    # temp scan here
+    temperature_list.append(r.take_temperature())
     r.right(200)
 
 r.right(50)
@@ -76,7 +79,7 @@ if marker_check == 1:
     r.forward(350)
     r.left(550)
     # fire scan here, then if fire: extinguish
-    # temp scan here
+    temperature_list.append(r.take_temperature())
     r.right(550)
     r.backward(350)
 
@@ -95,6 +98,14 @@ if marker_check == 1:
     r.forward(350)
     r.left(450)
     # person scan here, then if person: rescue
-    # temp scan here
+    temperature_list.append(r.take_temperature())
     r.right(450)
     r.backward(350)
+
+print(temperature_list)
+plt.plot(temperature_list)
+plt.xticks(list(range(len(temperature_list))))
+plt.xlabel('Room Number (0 is hallway)')
+plt.ylabel('Temperature (Degrees)')
+plt.title('Temperature of Rooms in Simulator')
+plt.show()
