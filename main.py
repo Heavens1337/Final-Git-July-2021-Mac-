@@ -42,7 +42,7 @@ if r.read_marker() == 1:
     r.left(600)
     r.forward(200)
     if r.scan_for_fire() is True:
-        for i in range(3):
+        for i in range(30):
             r.extinguish_fire()
     temperature_list.append(r.take_temperature())
     r.backward(200)
